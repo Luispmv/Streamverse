@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=REM:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'REM', sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #011638;
+    overflow-x: hidden;
+}
+header{
+    margin-top: 2rem;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 5rem;
+}
+header nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    background-color: #fcba04;
+    border-radius: 10px;
+    height: 5rem;
+    width: 90%;
+    border-radius: 50px;
+}
+header nav li{
+   font-family: 'REM', sans-serif;
+}
+header nav li a{
+    text-decoration: none;
+    color: white;
+}
+.carrousel-movies{
+    width: 300%;
+    height: 105vh;
+    display: flex;
+    /*animation: slide 30s infinite ease-in-out;*/
+}
+@keyframes slide{
+	0%{margin-left:0%}
+	20%{margin-left:0%}
+
+	25%{margin-left:-100%}
+	45%{margin-left:-100%}
+
+	50%{margin-left:-200%}
+	70%{margin-left:-200%}
+
+	75%{margin-left:0%}
+	95%{margin-left:0%}
+}
+.carrousel-movies .imagenes{
+    display: flex;
+    width: 100%;
+}
+.carrousel-movies .imagenes .Movie-header-card{
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://film-grab.com/wp-content/uploads/2019/02/quietplace031.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
+}
+.carrousel-movies .imagenes .Movie-header-card h1{
+    grid-row: 3;
+    grid-column: 1/3;
+    font-size: 5rem;
+    color: white;
+    text-align: left;
+    margin-left: 5rem;
+}
+.carrousel-movies .imagenes .Movie-header-card div{
+    grid-row: 4;
+    grid-column: 1/3;
+    text-align: center;
+    font-size: 3rem;
+    background-color: #fcba04;
+    width: 50%;
+    margin-left: 5rem;
+    height: 4rem;
+    border-radius: 50px;
+    display: grid;
+    place-content: center;
+}
+.carrousel-movies .imagenes .Movie-header-card div a{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+}
+.movie-list{
+    height: 50vh;
+    display: flex;
+    overflow-x: auto;
+    align-items: center;
+}
+.movie-list::-webkit-scrollbar{
+    width: 0;
+}
+.movie-list img{
+    height: 100%;
+    width: 20%;
+    margin-left: 1rem;
+    border: solid #fcba04;
+}
+
+.series .series-list{
+    height: 50vh;
+    display: flex;
+    overflow-x: auto;
+    align-items: center;
+}
+.series .series-list::-webkit-scrollbar{
+    width: 0;
+}
+.series .series-list img{
+    height: 100%;
+    width: 20%;
+    margin-left: 1rem;
+    border: solid #fcba04;
+}
+
+.categorias{
+    display: grid;
+    height: 310vh;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(6,1fr);
+    grid-gap: 10px;
+    margin: 1rem;
+}
+.categorias div{
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    display: grid;
+    place-content: center;
+    border: solid #fcba04;
+}
+.categorias div a{
+    text-decoration: none;
+    color: white;
+    font-size: 5rem;
+}
+
+footer{
+    height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+footer div{
+    display: grid;
+}
+footer div a{
+    color: white;
+    text-decoration: none;
+    margin: 1rem;
+}
+footer div a img{
+    width: 3rem;
+}
