@@ -40,7 +40,7 @@ header nav li a{
     width: 300%;
     height: 105vh;
     display: flex;
-    /*animation: slide 30s infinite ease-in-out;*/
+    animation: slide 30s infinite ease-in-out;
 }
 @keyframes slide{
 	0%{margin-left:0%}
